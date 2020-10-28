@@ -21,8 +21,8 @@ O conjunto de dados foi criado após aula do Sr. Doglas &lt;https://github.com/D
 - Anaconda
 - Visual Studio Code
 - Python Interpreter (version Python 3.7.9)
-- Comandos para realizar o treinamento:
-<br>
--python main.py --device False epochs 10
-<br>
--python main.py --device False --epochs 10 --pesos True
+
+# Comandos para realizar o treinamento:
+
+- python main.py --device False epochs 10
+- python main.py --device False --epochs 10 --pesos True
