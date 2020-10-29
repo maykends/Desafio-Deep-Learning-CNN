@@ -10,7 +10,7 @@ Este conjunto de dados contém diferentes tipos de veículos voadores, ou seja: 
 
 ## Divisão do Dataset
 
-O dataset está formado por 6 classes como: aviao, drone, foguete, helicoptero, jato, missel no qual são 100 para treinamento para cada classe existente e 20 para teste a cerca de cada diretório descrito no data/test.
+O dataset está formado por 6 classes como: aviao, drone, foguete, helicoptero, jato, missel no qual são 150 para treinamento para cada classe existente e 20 para teste a cerca de cada diretório descrito no data/test.
 
 ## Reconhecimentos
 
