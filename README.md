@@ -26,3 +26,7 @@ O conjunto de dados foi criado após aula do Sr. Doglas &lt;https://github.com/D
 
 - python main.py --device False --epochs 10
 - python main.py --device False --epochs 10 --pesos True
+
+## Objetivo 
+
+Melhorar a precisão do modelo CNN 
