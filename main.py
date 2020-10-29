@@ -19,7 +19,7 @@ def main(parser):
 
 # ************************************ DADOS ***************************************************
 
-  tamanho_da_imagem = 80 # Vamos alterar para 120
+  tamanho_da_imagem = 256 # Vamos alterar para 120
 
   # seleção se existe placa de vídeo
   if torch.cuda.is_available() and parser.device:
@@ -55,7 +55,7 @@ def main(parser):
       super(ModelClassificadorPlane, self).__init__()
       self.conv1 = nn.Conv2d(3, 6, 5)
       self.conv2 = nn.Conv2d(6, 16, 5)
-      self.linear1 = nn.Linear(4624, 120) # Deverá alterar esse primeiro valor
+      self.linear1 = nn.Linear(59536, 120) # Deverá alterar esse primeiro valor
       self.linear2 = nn.Linear(120, 84)
       self.linear3 = nn.Linear(84, 6)
       self.pool = nn.MaxPool2d(2, 2)
@@ -64,7 +64,7 @@ def main(parser):
     def forward(self, x):
       x = self.pool(F.relu(self.conv1(x)))
       x = self.pool(F.relu(self.conv2(x)))
-      x = x.view(-1, 4624)
+      x = x.view(-1, 59536)
       x = F.relu(self.linear1(x))
       x = F.relu(self.linear2(x))
       x = self.linear3(x)
